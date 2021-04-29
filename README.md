@@ -16,3 +16,5 @@ index.js failis on olemas Particle class ja Explosive class. Particles puhul on 
 Ülesanne oli äärmiselt põnev ning õppisin javascripti kohta palju rohkem kui koolis üldse õppinud olen. Tekkis kindlasti huvi kuidas luua paremini ning efektiivsemalt veebilehti ning nende rakendusi nii et isegi, kui ma praktikale ei pääse, siis suur aitäh juba selle eest!
 
 See miks kõik pushid on nii hilised on sellepärast, et tegin antud ülesannet alguses lokaalselt ning laadisin lõpus üles githubi.
+
+PS! Sain siiski interaktiivsuse ehk boonus 2 tööle (see küll ei muuda värvi, kuid sellegi poolest tekib iga hiireklõpsuga uus ilutulestiku lask).
