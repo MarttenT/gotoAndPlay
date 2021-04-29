@@ -1,0 +1,18 @@
+body {
+    background-color: black;
+  }
+
+.explosive {
+    background-color: grey;
+    background-size: contain;
+    width: 3px;
+    height: 3px;
+    position: fixed;
+  }
+
+.particle {
+    background-color: blue;
+    width: 2px;
+    height: 2px;
+    position: fixed;
+  }
