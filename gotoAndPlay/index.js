@@ -106,20 +106,26 @@ setInterval(() => {
 }, 10);
 
 addEventListener('click', (event) => {
+  const colors = ['red', 'blue', 'green', 'orange', 'purple', 'aqua', 'white'];
+
   mouse.x = event.clientX
   mouse.y = event.clientY
 
-  const numberOfParticlesToSpawn = 150;
+  this.x = mouse.x;
+  this.y = mouse.y;
 
-  const velocity = (Math.random() * (23 - 5) + 5);
-  const angle = (Math.random() * Math.PI) / 2 + Math.PI / 4;
+  this.numberOfParticlesToSpawn = 150;
 
-  const colors = ['red', 'blue', 'green', 'orange', 'purple', 'aqua', 'white'];
-  const color = colors[parseInt(Math.random() * colors.length)];
+  this.velocity = Math.random() * 2 + 1;
+  this.angle = Math.random() * 2 * Math.PI;
 
-  for (let i = 0; i < numberOfParticlesToSpawn; i++) {
-    particles.push(
-      new Particle(mouse.x, mouse.y), {
-      })
-    }
-  })
+  this.newx = Math.cos(this.angle) * this.velocity;
+  this.newy = Math.sin(this.angle) * this.velocity;
+
+  this.color = colors[(Math.random() * (7))];
+
+  for (let i = 0; i < this.numberOfParticlesToSpawn; i++) {
+    const particle = new Particle(this.x, this.y);
+    particles.push(particle);
+  }
+})
